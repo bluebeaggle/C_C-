@@ -7,6 +7,8 @@ int main(void) {
     printf("a+b = %d \n",a+b);
     printf("a-b = %d \n",a-b);
     printf("a*b = %d \n",a*b);
+    // int / int = int
+    // int / int = Not float
     printf("a/b = %d \n",a/b);
     printf("a%%b = %d \n",a%b);
     return 0;
