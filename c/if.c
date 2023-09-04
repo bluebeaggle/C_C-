@@ -7,7 +7,9 @@ int main(void) {
 	printf("2 : 숫자 나눗셈\n");
 	printf("3 : 점수에 따른 합격/불합격 통보 \n");
 	printf("4 : 크기 비교하기 \n");
+	printf("5 : 0 일때만 실행되는 !p 구문 \n");
 	printf("작동할 프로그램을 선택하시오: ");
+	
 	scanf("%d", &choice);
 
 	switch (choice) {
@@ -48,6 +50,14 @@ int main(void) {
 			else if (i_size < j_size) printf("%d 는 %d보다 작습니다.\n", i_size, j_size);
 			else if (i_size == j_size) printf("%d 는 %d는 같습니다,\n",i_size,j_size);
 		       	break;	
+
+		case 5 :
+			int p = 0;
+			printf(" p의 값을 입력하시오 : ");
+			scanf("%d", &p );
+			if (!p) printf("p == 0 입니다\n");
+			else printf("p !=0 입니다.\n");
+			break;
 	return 0;
 	}
 }
