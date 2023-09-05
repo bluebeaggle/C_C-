@@ -50,6 +50,15 @@ int main(void) {
     printf("8. ppb = %p \n", ppb);
     printf("\n");
 
+    printf("\n");
+    int brr[2][3] = {{1,2,3},{4,5,6}};
+    int (*pbrr)[3] ;
+
+    pbrr = brr;
+
+    printf("pbrr[1][2] : %d, brr[1][2] : %d \n", pbrr[1][2], brr[1][2]);
+
+
 
 
 
