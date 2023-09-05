@@ -59,6 +59,17 @@ int main(void) {
     printf("pbrr[1][2] : %d, brr[1][2] : %d \n", pbrr[1][2], brr[1][2]);
 
 
+    printf("\n function pointer \n");
+    int max(int a, int b){
+	    if (a>b) return a;
+	    else return b;
+    }
+    int (*pmax)(int, int) = max;
+    printf("max function's address = %p \n", &max);
+    printf("pmax = %p \n", *pmax);
+    printf("pmax function's address = %p \n", &pmax);
+
+
 
 
 
